@@ -512,6 +512,43 @@ except ValueError as ve:
 ```
 @LIA.eval(`["main.py"]`, `none`, `python3 main.py`)
 
+
+``` python
+import requests
+
+
+data = 'minha mensagem'
+
+
+url = 'https://script.google.com/macros/s/AKfycbyp7nIYtEIGPmXe53f5wfgxxg7xOgAWm1oVy0jMFbzDH0vBm6-iG5CTT5Ho5R7x7hD0/exec' 
+print('Enviando...')
+response = requests.post(url, json=data)
+print('Pronto!')
+```
+@LIA.eval(`["main.py"]`, `none`, `python3 main.py`)
+
+
+
+
+``` python
+import requests
+
+url = 'https://script.google.com/macros/s/AKfycbyp7nIYtEIGPmXe53f5wfgxxg7xOgAWm1oVy0jMFbzDH0vBm6-iG5CTT5Ho5R7x7hD0/exec' 
+
+response = requests.get(url)
+print('Buscando ideias geradas:')
+if response.status_code == 200:
+  json_data = response.json()
+  for item in json_data['values']:
+    print(item)
+else:
+  print(f'HTTP Error: {response.status_code}')
+```
+@LIA.eval(`["main.py"]`, `none`, `python3 main.py`)
+
+
+
+
 Muitas ideias:
 
 
