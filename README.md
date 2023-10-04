@@ -17,6 +17,8 @@ link:     https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css
 
 script:   https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js
 
+script:   https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js
+
 
 onload
 window.CodeRunner = {
@@ -312,48 +314,155 @@ link:     https://cdn.jsdelivr.net/gh/liascript/custom-style/custom.min.css
 
 # Algoritmos, códigos e programação
 
-> Aliados da criatividade!
+
+
+<div id="gpt1"></div>
+
+<script>
+  const typedText = document.getElementById('gpt1');
+  typedText.style.fontSize = "32px"; 
+
+  const textToType = 'Aliados da criatividade!';
+  let currentIndex = 0;
+
+  function typeCharacter() {
+    typedText.innerHTML += textToType[currentIndex];
+    currentIndex += 1;
+
+    if (currentIndex < textToType.length) {
+      setTimeout(typeCharacter, 100);
+    }
+  }
+
+  typeCharacter();
+</script>
+
+                 {{1}}
+************************************************
+
+Quem?
+
+> Sou professora da área de Computação no Centro de Tecnologia da UFSM
+
+************************************************
+
+
+                 {{2}}
+************************************************
+
+O quê?
+
+> Um ponto de vista sobre algumas interAÇÕES na temática do evento
+
+************************************************
 
 
 ## Programação 
 
+Definição clássica:
+
+> Processo de criar algoritmos e instruções que possam ser executados por um computador para realizar tarefas.
+
+
 ### É uma arte?!
+
+Programação como uma arte:
+
+> Capacidade ou habilidade para a aplicação de conhecimento ou para a execução de uma ideia.
+
 
 ![](img/shopping.png)
 
 ### É um superpoder!?
 
-![](img/superpower-man.jpeg)
+> Ações para público jovem têm apresentado programação como um "superpoder"
 
-![](img/Earth2AXRayvision1.png)
+                 {{1}}
+************************************************
 
-## Um tema, uma criação, um código
+Poder de visão além do alcance:
+
+![](img/Earth2AXRayvision1-resize.png)
+
+************************************************
 
 
-```
- _______    _______  __   __  _______  __   __  _______  ___      _______  _______ 
-|       |  |       ||  |_|  ||       ||  |_|  ||       ||   |    |       ||       |
-|____   |  |    ___||       ||    ___||       ||    _  ||   |    |   _   ||  _____|
- ____|  |  |   |___ |       ||   |___ |       ||   |_| ||   |    |  | |  || |_____ 
-| ______|  |    ___| |     | |    ___||       ||    ___||   |___ |  |_|  ||_____  |
-| |_____   |   |___ |   _   ||   |___ | ||_|| ||   |    |       ||       | _____| |
-|_______|  |_______||__| |__||_______||_|   |_||___|    |_______||_______||_______|
+                 {{2}}
+************************************************
 
-```
-https://patorjk.com/software/taag/#p=display&f=Modular&t=2%20exemplos
+Poder de criação:
+
+![](img/superpower-creation.png)
+
+************************************************
+
+
+## Desafios, criações, códigos
+
+
+<div id="gpt2"></div>
+
+<script>
+  const typedText = document.getElementById('gpt2');
+  typedText.style.fontSize = "32px"; 
+
+  const textToType = 'Dois exemplos de interAÇÕES...';
+  let currentIndex = 0;
+
+  function typeCharacter() {
+    typedText.innerHTML += textToType[currentIndex];
+    currentIndex += 1;
+
+    if (currentIndex < textToType.length) {
+      setTimeout(typeCharacter, 100);
+    }
+  }
+
+  typeCharacter();
+</script>
 
 
 ### Games de Paradigmas de Programação
 
-Um tema: Ciência, Biologia e Meio Ambiente
+Um desafio: 
+
+> Criar games no tema "Ciência, Biologia e Meio Ambiente" como projeto final de disciplina de programação.
+
+                 {{1}}
+************************************************
+
+Varias criações: 
+
+> Muitos games e uma galeria ilustrada!
+
+https://itch.io/jam/games-paradigmas-programacao-ufsm-2020a
+
 
 ![](img/recording.gif)
 
-Uma criação: muitos games!
+
+************************************************
+
+                 {{2}}
+************************************************
+Um dos games criados: 
+
+> Uma sereia acordou de um sono profundo só para se deparar com seu lar repleto de lixo e sem nenhum peixe à sua volta. Seu objetivo é limpar a água e assim criar um lugar que possa ter vida novamente.
+
+
+https://alegz.itch.io/syrene
 
 ![](img/screen-syrene.png)
 
+************************************************
+
+
+                 {{3}}
+************************************************
+
 Um código:
+
+> Apenas algumas das 5354 linhas em linguagem Java
 
 ``` java
 package com.alegz.mermaid;
@@ -471,54 +580,259 @@ public class MermaidGame implements ApplicationListener
 	}
 }
 ```
+
+************************************************
+
+
+
 ### Visita Autoguiada ao Jardim Botânico
 
+Um desafio:
 
-## Um desafio
+> Criar um app para visitantes do Jardim Botânico da UFSM
 
-Um tema:
+                 {{1}}
+************************************************
+
+Uma criação:
+
+> Projeto de interface, equipe do Desenho Industrial UFSM
+
+![](img/app-jbsm1.png) 
+
+
+************************************************
+
+                 {{2}}
+************************************************
+
+Uma criação:
+
+> App em desenvolvimento...
+
+![](img/recording-jb.gif)
+
+
+************************************************
+
+                 {{3}}
+************************************************
 
 Um código:
 
-``` python
-def f(x):
-  return x + 1
+> Apenas algumas linhas em linguagem JavaScript
 
-print(f(5))
+``` javascript
+import { defineStore } from 'pinia';
+import { api } from 'boot/axios';
+
+export const useArraysStore = defineStore('arrays', {
+	state: () => ({
+		pointsOfInterest: [],
+		pointsOfInterestLoaded: false,
+		collection: [],
+		collectionLoaded: false,
+		hikingTrails: [],
+		hikingTrailsLoaded: false,
+	}),
+
+	getters: {
+	},
+
+	actions: {
+		addToPointsOfInterest(item) {
+			this.pointsOfInterest.push(item);
+		},
+
+		addToCollection(item) {
+			this.collection.push(item);
+		},
+
+		addToHikingTrails(item) {
+			this.hikingTrails.push(item);
+		},
+
+		async loadPointsOfInterest() {
+			if (this.pointsOfInterestLoaded === true)
+				return;
+
+			const pointsOfInterest = await this.readSheet('pontos_interesse');
+			this.handlePointOfInterestSpreadsheetData(pointsOfInterest);
+			this.pointsOfInterestLoaded = true;
+		},
+
+		async loadCollection() {
+			if (this.collectionLoaded === true)
+				return;
+
+			const collection = await this.readSheet('acervo');
+			this.handleCollectionSpreadsheetData(collection);
+			this.collectionLoaded = true;
+		},
+
+		async loadHikingTrails() {
+			if (this.hikingTrailsLoaded === true)
+				return;
+
+			const hikingTrails = await this.readSheet('trilhas');
+			this.handleHikingTrailsSpreadsheetData(hikingTrails);
+			this.hikingTrailsLoaded = true;
+		},
+
+		async loadHikingTrailPoints(hikingTraildId) {
+			if (hikingTraildId == null)
+				return;
+
+			var hikingTrail = this.hikingTrails.find(hikingTrail => hikingTrail.id === hikingTraildId);
+
+			if (hikingTrail == null || hikingTrail.pointsLoaded === true)
+				return;
+
+			const hikingTrailPoints = await this.readSheet('pontos_trilha');
+			this.handleHikingTrailPointsSpreadsheetData(hikingTrail, hikingTrailPoints);
+			hikingTrail.pointsLoaded = true;
+		},
+
+		async readSheet(sheetName) {
+			const url = `https://sheets.googleapis.com/v4/spreadsheets/${process.env.VUE_APP_SPREADSHEET_ID}/values/${sheetName}?key=${process.env.VUE_APP_API_KEY}`;
+			const response = await api.get(url);
+
+			if (response.data && response.data.values) {
+				return response.data.values;
+			} else {
+				return [];
+			}
+		},
+
+		handlePointOfInterestSpreadsheetData(data) {
+			const header = data[0];
+			const body = data.slice(1);
+
+			body.forEach(row => {
+				const poi = {};
+				row.forEach((value, index) => {
+					poi[header[index]] = value;
+				});
+				if (poi.id == null || poi.categoria == null || poi.nome == null || poi.latitude == null || poi.longitude == null)
+					return;
+
+				poi.links = this.handleLinks(poi.generic_links, poi.drive_links);
+
+				this.addToPointsOfInterest(poi);
+			});
+		},
+
+		handleCollectionSpreadsheetData(data) {
+			const header = data[0];
+			const body = data.slice(1);
+
+			body.forEach(row => {
+				const colItem = {};
+				row.forEach((value, index) => {
+					colItem[header[index]] = value;
+				});
+				if (colItem.id == null || colItem.nome == null)
+					return;
+
+				colItem.links = this.handleLinks(colItem.generic_links, colItem.drive_links);
+
+				this.addToCollection(colItem);
+			});
+		},
+
+		handleHikingTrailsSpreadsheetData(data) {
+			const header = data[0];
+			const body = data.slice(1);
+
+			body.forEach(row => {
+				const hikingTrail = {};
+				row.forEach((value, index) => {
+					hikingTrail[header[index]] = value;
+				});
+				if (hikingTrail.id == null || hikingTrail.nome == null)
+					return;
+
+				hikingTrail.pointsLoaded = false;
+				hikingTrail.points = [];
+
+				this.addToHikingTrails(hikingTrail);
+			});
+		},
+
+		handleHikingTrailPointsSpreadsheetData(hikingTrail, data) {
+			const header = data[0];
+			const body = data.slice(1);
+
+			body.forEach(row => {
+				const hikingTrailPoint = {};
+				row.forEach((value, index) => {
+					hikingTrailPoint[header[index]] = value;
+				});
+				if ([hikingTrailPoint.trilha_id, hikingTrailPoint.latitude, hikingTrailPoint.longitude, hikingTrailPoint.ordem].some(value => value == null))
+					return;
+				if (hikingTrailPoint.trilha_id != hikingTrail.id)
+					return;
+
+				hikingTrail.points.push(hikingTrailPoint);
+			});
+			hikingTrail.points.sort((a, b) => a.ordem - b.ordem);
+		},
+
+		handleLinks(generic_links, drive_links) {
+			if (generic_links == null && drive_links == null)
+				return null;
+
+			let links = [];
+			if (generic_links != null) {
+				generic_links.split(';').forEach(link => {
+					links.push(link.trim());
+				});
+			}
+			if (drive_links != null) {
+				drive_links.split(';').forEach(link => {
+					let driveId = link.split('/')[5];
+					links.push('https://lh3.googleusercontent.com/d/' + driveId);
+				});
+			}
+			return links;
+		},
+
+	}
+})
 ```
-@LIA.eval(`["main.py"]`, `none`, `python3 main.py`)
+************************************************
 
 
+
+## Um desafio, uma experiência
+
+Um desafio:
+
+> Pensar em formas inovadoras de visualizar (e compartilhar) uma visita ao Jardim Botânico, usando um mapa como pano de fundo. 
+
+Um QR Code:
+
+<div id="qrcode"></div>
+
+<script>
+  var qrcode = new QRCode(document.getElementById("qrcode"), {
+    text: window.location.href,
+    width: 256,
+    height: 256
+  });
+</script>
+
+
+
+                 {{1}}
+************************************************
+
+Um código para compartilharmos ideias (concorrente do "mentimeter" :-) ):
 
 ``` python
 import requests
 
-url = 'https://script.google.com/macros/s/AKfycbyp7nIYtEIGPmXe53f5wfgxxg7xOgAWm1oVy0jMFbzDH0vBm6-iG5CTT5Ho5R7x7hD0/exec' 
-
-try:
-  response = requests.get(url)
-
-  # Check if the request was successful (status code 200)
-  if response.status_code == 200:
-    json_data = response.json()
-    print('JSON Response:')
-    print(json_data)
-  else:
-    print(f'HTTP Error: {response.status_code}')
-except requests.exceptions.RequestException as e:
-  print(f'Request Exception: {e}')
-except ValueError as ve:
-  print(f'Error decoding JSON: {ve}')
-```
-@LIA.eval(`["main.py"]`, `none`, `python3 main.py`)
-
-
-``` python
-import requests
-
-
-data = 'minha mensagem'
-
+data = 'minha ideia'
 
 url = 'https://script.google.com/macros/s/AKfycbyp7nIYtEIGPmXe53f5wfgxxg7xOgAWm1oVy0jMFbzDH0vBm6-iG5CTT5Ho5R7x7hD0/exec' 
 print('Enviando...')
@@ -528,6 +842,12 @@ print('Pronto!')
 @LIA.eval(`["main.py"]`, `none`, `python3 main.py`)
 
 
+************************************************
+
+                 {{2}}
+************************************************
+
+Nosso "mural" de ideias:
 
 
 ``` python
@@ -547,11 +867,13 @@ else:
 @LIA.eval(`["main.py"]`, `none`, `python3 main.py`)
 
 
+************************************************
 
 
-Muitas ideias:
+                 {{3}}
+************************************************
 
+![](img/theend.png)
 
-
-Código javascript que envia uma ideia
+************************************************
 
