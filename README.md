@@ -15,6 +15,9 @@ translation: English  translations/English.md
 
 link:     https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css
 
+link:     custom.css
+          https://fonts.googleapis.com/css?family=Quattrocento%20Sans
+
 script:   https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js
 
 script:   https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js
