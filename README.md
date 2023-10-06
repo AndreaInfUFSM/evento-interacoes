@@ -371,10 +371,31 @@ Definição clássica:
 
 Programação como uma arte:
 
-> Capacidade ou habilidade para a aplicação de conhecimento ou para a execução de uma ideia.
+> Dicionário Priberam: *"Capacidade ou habilidade para a aplicação de conhecimento ou para a execução de uma ideia.*"
 
+
+								 {{1}}
+************************************************
+
+Donald Knuth. The Art of Computer Programming. 1st ed. 1968, rev. 1997.
 
 ![](img/shopping.png)
+
+
+************************************************
+
+								 {{2}}
+************************************************
+
+Winnie Soon, Geoff Cox. Aesthetic Programming: A Handbook of Software Studies
+http://www.openhumanitiespress.org/books/titles/aesthetic-programming/
+
+![](img/estetica.png)
+
+
+
+************************************************
+
 
 ### É um superpoder!?
 
@@ -383,7 +404,7 @@ Programação como uma arte:
                  {{1}}
 ************************************************
 
-Poder de visão além do alcance:
+Poder de visão "raio-x":
 
 ![](img/Earth2AXRayvision1-resize.png)
 
@@ -424,6 +445,8 @@ Poder de criação:
   typeCharacter();
 </script>
 
+
+![](img/screenshot-interacoes.png)
 
 ### Games de Paradigmas de Programação
 
